@@ -6,6 +6,7 @@ import Home from '../../components/HomeSection';
 import Planets from '../../components/PlanetsSection';
 import Starships from '../../components/StarshipSection';
 import People from '../../components/PeopleSection';
+import Species from '../../components/SpeciesSection';
 
 const MainContainer = () => {
   const location = useLocation();
@@ -31,11 +32,14 @@ const MainContainer = () => {
         </Route>
 
         <Route path={paths.starships.href}>
-          <Starships/>
+          <Starships />
         </Route>
 
         <Route path={paths.people.href}>
           <People />
+        </Route>
+        <Route path={paths.species.href}>
+          <Species />
         </Route>
 
         <Route path={paths.home.href}>
