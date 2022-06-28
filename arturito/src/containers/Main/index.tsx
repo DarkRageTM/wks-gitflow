@@ -9,7 +9,6 @@ import People from '../../components/PeopleSection';
 import Vehicles from '../../components/Vehicles Section';
 import Species from '../../components/SpeciesSection';
 
-
 const MainContainer = () => {
   const location = useLocation();
   const pathName = Object.keys(paths).find(
